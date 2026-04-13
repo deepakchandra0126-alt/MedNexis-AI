@@ -1,0 +1,49 @@
+.location-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 16px;
+  border: 1px solid;
+  border-radius: 0;
+  flex-shrink: 0;
+}
+
+.alert-icon { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+
+.alert-content { flex: 1; }
+
+.alert-title {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  letter-spacing: 0.3px;
+}
+
+.alert-diseases { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 6px; }
+
+.alert-tag {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 20px;
+  border: 1px solid;
+  background: rgba(255,255,255,0.05);
+}
+
+.alert-tip {
+  font-size: 12px;
+  color: var(--text2);
+  line-height: 1.4;
+}
+
+.alert-close {
+  background: none;
+  border: none;
+  color: var(--text3);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.alert-close:hover { color: var(--text); }

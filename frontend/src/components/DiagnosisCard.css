@@ -1,0 +1,185 @@
+.diagnosis-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.diag-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.diag-disease {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.diag-icon { font-size: 24px; }
+
+.diag-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+
+.diag-severity {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.confidence-ring {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.confidence-ring svg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+}
+.confidence-ring span {
+  font-size: 11px;
+  font-weight: 700;
+  z-index: 1;
+}
+
+/* Tabs */
+.diag-tabs {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0;
+}
+
+.diag-tab {
+  background: none;
+  border: none;
+  color: var(--text3);
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: all 0.2s;
+}
+.diag-tab:hover { color: var(--text2); }
+.diag-tab.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* Content */
+.diag-content {
+  min-height: 80px;
+}
+
+.diag-description {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text2);
+}
+
+.diag-section-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text3);
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.diag-symptoms { margin-top: 12px; }
+.symptom-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.symptom-chip {
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+.symptom-chip.matched {
+  background: rgba(52,211,153,0.1);
+  color: var(--green);
+  border: 1px solid rgba(52,211,153,0.2);
+}
+.symptom-chip.unmatched {
+  background: rgba(100,116,139,0.1);
+  color: var(--text3);
+  border: 1px solid var(--border);
+}
+
+/* Lists */
+.diag-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.diag-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text2);
+  line-height: 1.5;
+}
+.list-icon { flex-shrink: 0; }
+
+/* Alternatives */
+.alternatives-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.alt-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.alt-name {
+  font-size: 13px;
+  color: var(--text2);
+  width: 140px;
+  flex-shrink: 0;
+}
+.alt-bar-wrap {
+  flex: 1;
+  height: 5px;
+  background: var(--bg3);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.alt-bar {
+  height: 100%;
+  background: var(--bg3);
+  background: linear-gradient(90deg, var(--text3), var(--text2));
+  border-radius: 3px;
+}
+.alt-pct {
+  font-size: 12px;
+  color: var(--text3);
+  width: 35px;
+  text-align: right;
+}
+
+/* Disclaimer */
+.diag-disclaimer {
+  font-size: 11px;
+  color: var(--text3);
+  background: rgba(251,191,36,0.05);
+  border: 1px solid rgba(251,191,36,0.15);
+  border-radius: 8px;
+  padding: 8px 12px;
+  line-height: 1.5;
+}

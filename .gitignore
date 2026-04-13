@@ -1,0 +1,8 @@
+database/
+.runtime/
+node_modules/
+.env
+.venv/
+__pycache__/
+logs/
+build/
